@@ -1,0 +1,36 @@
+.hoverable:hover {
+    fill: rgb(101, 111, 101);
+    cursor: pointer;
+}
+#svgJS g:hover polyline,
+#svgJS g:hover line {
+    fill: none;
+    stroke-width: 2;
+    stroke: orange;
+}
+
+#svgJS g:hover g text,
+#svgJS g:hover text {
+    font-weight: bold;
+}
+
+#svgJS g:hover polygon,
+#svgJS g:hover rect,
+#svgJS g:focus polygon,
+#svgJS g:focus rect {
+    fill: orange(24, 20%, 50%,.3);
+    stroke: orange;
+    stroke-width: 2;
+}
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}

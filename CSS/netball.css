@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 40, 67);
+    color: #FFF;
+    font-size: 40px;
+    background-image: radial-gradient(red, blue);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: left;
+    color: rgb(99, 99, 205);
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.content {
+    display: flex;
+    float: left;
+    font-size: 20px;
+}
+
+.pic {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+
+.points {
+    display: flex;
+    float: left;
+    justify-content: left;
+}
+
+ul li {
+    margin-top: 10px;
+    font-size: 18px;
+}

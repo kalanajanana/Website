@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/navigation.css">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="topnav">
+        <div class="row logo">
+            <div class="col-25">
+                <a href="Pageeditor3.html">Kalana</a>
+            </div>
+            <div class="col-50">
+                <img src="../Img/logo-l.png" alt="logo">
+            </div>
+            <div class="col-25">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-50">
+                <a href="../MainPage.html">Home</a>
+                <a href="Comments.html">Comments</a>
+                <a href="#products">Shop</a>
+                <a class="active" href="QuizStart.html">Quiz</a>
+                <a href="student40.html">Site Map</a>
+                <a href="studentDetails.html">About Us</a>
+            </div>
+        </div>
+    </div>
+    <!--All the question in the quiz-->
+    <div class="quizContainer">
+        <div class="qa_Header">
+            <span>Score: <span id="score">0</span></span>
+            <span id="countdown">0</span>
+            <span>Question: <span id="Ques_no">0</span>/10</span>
+        </div>
+        <div class="qa_body">
+            <div class="qa_set active">
+                <h4>1. Who is the first Indian cricketer to hit 10,000 runs in T20 cricket for men?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1" onclick="countClicks()">
+                    <span>i) Mahendra Singh Dhoni</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1" onclick="countClicks()">
+                    <span>ii) Virat Kohli</span>
+                </div>
+                <div class="qa_ans_row">
+                    <!--vallue="value" is to make this is the ansewr using js -->
+                    <input type="radio" name="a1" value="value" onclick="countClicks()">
+                    <span>iii) Rohit Sharma</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a1" onclick="countClicks()">
+                    <span>iv) Ravindra Jadeja</span>
+                </div>
+            </div>
+
+
+            <div class="qa_set">
+                <h4>2. What is the official slogan of the 2024 Paris Olympics?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" onclick="countClicks()">
+                    <span>i) Inclusive and Impressive</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" value="value" onclick="countClicks()">
+                    <span>ii) Games Wide Open</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" onclick="countClicks()">
+                    <span>iii) Global Partnershipa</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a2" onclick="countClicks()">
+                    <span>iv) Brotherly and Beautiful</span>
+                </div>
+            </div>
+
+
+            <div class="qa_set">
+                <h4>3. How many strokes are often performed in international swimming competition?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" onclick="countClicks()">
+                    <span>i) 3</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" value="value" onclick="countClicks()">
+                    <span>ii) 4</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" onclick="countClicks()">
+                    <span>iii) 5</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a3" onclick="countClicks()">
+                    <span>iv) 6</span>
+                </div>
+            </div>
+
+
+            <div class="qa_set">
+                <h4>4. Who is widely considered the greatest and the most decorated olympic swimmers of all time with 23 gold medals,3 silver medals,and 2 bronze medals?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" onclick="countClicks()">
+                    <span>i) Matt Boindi</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" onclick="countClicks()">
+                    <span>ii) Mark Spitz</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" onclick="countClicks()">
+                    <span>iii) Matthew Abesinghe</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a4" value="value" onclick="countClicks()">
+                    <span>iv) Michael phelps</span>
+                </div>
+            </div>
+
+            <div class="qa_set">
+                <h4>5. Which country is the birthplace of Badminton</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5" onclick="countClicks()">
+                    <span>i) China</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="5" onclick="countClicks()">
+                    <span>ii) Denmark</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5" onclick="countClicks()">
+                    <span>iii) New Zealand</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a5" value="value" onclick="countClicks()">
+                    <span>iv) India</span>
+                </div>
+            </div>
+
+            <div class="qa_set">
+                <h4>6. Which football club does David Beckham played for?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" onclick="countClicks()">
+                    <span>i) Manchester United</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" onclick="countClicks()">
+                    <span>ii) Liverpool</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" value="value" onclick="countClicks()">
+                    <span>iii) Real Madrid</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a6" onclick="countClicks()">
+                    <span>iv) Montevideo Wanderers</span>
+                </div>
+            </div>
+
+            <div class="qa_set">
+                <h4>7. When was volleyball created?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7" onclick="countClicks()">
+                    <span>i) 2004</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7" onclick="countClicks()">
+                    <span>ii) 1912</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7" onclick="countClicks()">
+                    <span>iii) 1848</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a7" value="value" onclick="countClicks()">
+                    <span>iv) 1895</span>
+                </div>
+            </div>
+
+            <div class="qa_set">
+                <h4>8. From which country did rugby originate?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8" value="value" onclick="countClicks()">
+                    <span>i) England</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8" onclick="countClicks()">
+                    <span>ii) Scottland</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8" onclick="countClicks()">
+                    <span>iii) Germany</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a8" onclick="countClicks()">
+                    <span>iv) USA</span>
+                </div>
+            </div>
+
+            <div class="qa_set">
+                <h4>9. What is the approximate maximum weight of Golf Ball as per Rules of Golf?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" onclick="countClicks()">
+                    <span>i) 20 gms</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" onclick="countClicks()">
+                    <span>ii) 25 gms</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" onclick="countClicks()">
+                    <span>iii) 40 gms</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a9" value="value" onclick="countClicks()">
+                    <span>iv) 45 gms</span>
+                </div>
+            </div>
+
+            <div class="qa_set">
+                <h4>10. In which Summer Olympics, Badminton was introduced for the first time?</h4>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" value="value" onclick="countClicks()">
+                    <span>i) 1992 Summer Olympics</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" onclick="countClicks()">
+                    <span>ii) 1996 Summer Olympics</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" onclick="countClicks()">
+                    <span>iii) 2000 Summer Olympics</span>
+                </div>
+                <div class="qa_ans_row">
+                    <input type="radio" name="a10" onclick="countClicks()">
+                    <span>iv) 2004 Summer Olympic</span>
+                </div>
+            </div>
+
+
+            <div class="qa_set">
+                <h4>Your total Score: <span id="totalScore">0</span> out of 100</h4>
+            </div>
+        </div>
+        <div class="qa_footer">
+            <span class="btn1" id="skip" onclick="countClicks()">Next Question</span>
+            <a href="QuizStart.html" class="btn1" id="tryAgain">Start Again</a>
+        </div>
+    </div>
+
+    <script src="../Js/script.js"></script>
+</body>
+
+</html>
